@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+} */
+
+.app-container {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 750px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  height: 30px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: smaller;
+}
+
+.menu li a:hover {
+  color: white;
+}
+
+.name-sm {
+  display: block;
+}
+
+.name-md {
+  display: none;
+}
+
+/* .project-description {
+  font-family: "Playfair Display", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-description.odd,
+.project-description.even {
+  padding-left: 15px;
+}
+
+.project-description h3 {
+  font-size: 26px;
+}
+
+.project-description p {
+  color: #828282;
+  margin: 30px 0px;
+}
+
+.project-description a {
+  max-width: 90px;
+} */
+
+/* h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  box-shadow: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.project-content.even .project-img {
+  order: 1;
+}
+
+.project-content.even .project-description {
+  order: 2;
+}
+
+.project-content.odd .project-description {
+  order: 1;
+}
+
+.project-content.odd .project-img {
+  order: 2;
+}
+
+.section {
+  margin: 100px;
+  padding: 200px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.profile-image {
+  display: none;
+}
+
+.profile-greeting {
+  font-family: "Playfair Display";
+  color: #333;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.about-me {
+  font-family: "Nunito";
+  color: #828288;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  padding-top: 2rem;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+/* nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: smaller;
+} */
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  width: Hug (181px) px;
+  height: Hug (80px) px;
+  gap: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100vh;
+}
+
+.projects-section {
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-section {
+  max-width: 350px;
+  margin: 0 auto;
+
+  /* background-color: #f7f7f7;
+  padding: 50px 20px;
+  width: (400px)px;
+  height: (603px)px;
+  top: 160.5px;
+  left: 520px;
+  gap: 56px;
+  opacity: 0px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerimg {
+  display: inline-block;
+  justify-content: center;
+  height: auto;
+  gap: 30px;
+}
+
+.footer {
+  color: #828282;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between icons */
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.footer-icons {
+  display: flex;
+  gap: 10px; /* Adjust spacing between icons */
+}
+
+.footer-icon {
+  height: 24px;
+  width: 24px;
+}
+
+form button {
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  width: auto;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.send-button {
+  background-color: #fdc435;
+  color: black;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.project-button {
+  /* color: black;
+  background-color: transparent; */
+  padding: 5px 10px;
+  border: 1px solid #000;
+  width: auto;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* .btn-link {
+  color: black;
+  background-color: transparent;
+  border: 1px solid #000;
+  width: auto;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 1px;
+
+} */
+.btn {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #fdc435;
+  border: #fdc435;
+}
+
+.btn-primary {
+  background-color: #fdc435;
+  border: 2px solid #fdc435;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #25282b;
+}
+
+.btn-outline {
+  background-color: transparent;
+  box-shadow: none !important;
+  border: 1.5px solid #25282b;
+}
+
+@media (min-width: 1025) and (max-width: 1443) {
+  .projects-section {
+    margin-top: -25vh;
+  }
+}
+
+@media (min-width: 1444px) {
+  .profile-image img {
+    height: 680px;
+    margin-top: -220px;
+  }
+
+  .projects-section {
+    margin-top: -50vh;
+  }
+}
+
+@media (min-width: 480px) {
+  .about {
+    padding-right: 0px;
+  }
+
+  .name-sm {
+    display: none !important;
+  }
+
+  .name-md {
+    display: block !important;
+  }
+
+  .text-content {
+    padding-top: 6rem;
+    width: 50%;
+  }
+
+  .profile-greeting {
+    font-size: 48px;
+  }
+
+  .profile-img-sm {
+    display: none;
+  }
+
+  .profile-image {
+    width: 50%;
+    height: 100vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: -60px;
+    z-index: -10;
+  }
+
+  .profile-image img {
+    height: 380px;
+    border-radius: 9999px;
+    padding-top: 6rem;
+    margin-left: 85px;
+  }
+
+  .projects-section {
+    max-width: 800px !important;
+  }
+
+  .projects-section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #f9a825;
+    position: absolute;
+    left: 48%;
+  }
+
+  .project-content {
+    flex-direction: row;
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  .project-img,
+  .project-description {
+    width: 50%;
+    height: 100%;
+  }
+
+  .project-img.odd img,
+  .project-description.even {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .project-description.odd,
+  .project-img.even img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sm-hidden {
+    display: none !important;
+  }
+
+  .profile-img-sm {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-section {
+    margin-top: 50px;
+  }
+
+  .projects-section h2 {
+    text-align: left;
+  }
+
+  .projects-content {
+    min-height: 350px;
+  }
+
+  .project-description {
+    padding-bottom: 30px;
+    /* font-family: cursive; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    height: 50vh !important;
+  }
+
+  .profile-image {
+    height: 50vh !important;
+  }
+
+  .projects-section {
+    margin-top: -25vh;
+  }
+}
