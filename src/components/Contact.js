@@ -42,11 +42,11 @@ const Contact = () => {
               </div>
     
               <button
-                type="submit"
-                className="w-full bg-primary text-black py-2 rounded-lg font-medium hover:bg-blue-600 transition"
-              >
-                Send Message
-              </button>
+  type="submit"
+  className="mx-auto w-40 bg-primary text-black py-2 rounded-lg font-medium hover:bg-blue-600 transition"
+>
+  Send 
+</button>
             </form>
           </div>
         </section>

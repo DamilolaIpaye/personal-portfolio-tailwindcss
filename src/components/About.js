@@ -38,7 +38,7 @@ const About = () => {
             Hi, I'm <span className="font-semibold text-gray-800">Rodiyah Ipaye</span>, 
             a passionate front-end developer specializing in building beautiful and 
             functional web applications using <span className="text-blue-500 font-medium">React</span> 
-            and <span className="text-green-500 font-medium">Tailwind CSS</span>. 
+             and <span className="text-green-500 font-medium">Tailwind CSS</span>. 
             I love transforming ideas into reality and crafting seamless user experiences.
           </p>
           <p className="text-gray-600 mt-4">
@@ -47,15 +47,20 @@ const About = () => {
           </p>
 
     
-        <button className="bg-primary text-black rounded-lg" onClick={handleProjectButtonClick}>Projects
-        </button>
-        <a
-          href="https://www.linkedin.com/in/damilola-ipaye-8413b1243/"
-          target="_blank"
-          rel='noopener noreferrer'
-          className="btn-link  btn btn-outline">
-          LinkedIn
-        </a>
+          <button 
+  className="bg-gradient-to-r from-yellow-500 to-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow-md transition duration-300 hover:from-white-500 hover:to-yellow-500  hover:text-white hover:shadow-lg" 
+  onClick={handleProjectButtonClick}
+>
+Projects
+</button>
+<a
+  href="https://www.linkedin.com/in/damilola-ipaye-8413b1243/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border-2 border-yellow-500 text-black-500 font-semibold px-6 py-2 rounded-lg transition duration-300 hover:bg-yellow-500 hover:text-white hover:shadow-md"
+>
+  LinkedIn
+</a>
        
       </div>
 
