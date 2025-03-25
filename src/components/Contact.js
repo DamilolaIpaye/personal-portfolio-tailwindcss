@@ -16,7 +16,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
                   required
                 />
               </div>
@@ -26,7 +26,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
                   required
                 />
               </div>
@@ -36,14 +36,14 @@ const Contact = () => {
                 <textarea
                   rows="4"
                   placeholder="Enter your message"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
                   required
                 ></textarea>
               </div>
     
               <button
   type="submit"
-  className="mx-auto w-40 bg-primary text-black py-2 rounded-lg font-medium hover:bg-blue-600 transition"
+  className="mx-auto w-40 bg-primary text-black py-2 rounded-lg font-medium hover:bg-black hover:text-white transition"
 >
   Send 
 </button>
