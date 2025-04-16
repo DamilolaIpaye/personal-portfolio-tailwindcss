@@ -11,16 +11,12 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24">
+    <section id="about" className="bg-white py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8">
         {/* Image Section */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <div className="relative w-48 h-48 md:w-60 md:h-60">
-            <img
-              src={YellowBg}
-              alt="Background"
-              className="absolute inset-0 w-full h-full"
-            />
+           
             <img
               src={ProfileImg}
               alt="Rodiyah Ipaye"
@@ -32,7 +28,7 @@ const About = () => {
         {/* Text Section */}
         <div className="text-center md:text-left w-full md:w-1/2">
          
-        <h2 className="text-3xl font-bold text-gray-800">Hello, my name is Rodiyah Ipaye</h2>
+        <h2 >Hello, my name is Rodiyah Ipaye</h2>
             <p className="text-gray-600 mt-4 leading-relaxed"> 
             a passionate front-end developer specializing in building beautiful and 
             functional web applications using <span className="text-blue-500 font-medium">React</span> 

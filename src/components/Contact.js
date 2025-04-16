@@ -2,17 +2,17 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24">
-          <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 text-center">Contact</h2>
-            <p className="text-gray-600 text-center mt-2">
-              Feel free to reach out if you have any questions or observations!
-            </p>
+      <section id="contact" className="bg-white py-6 px-4 md:px-8 lg:px-16">
+      <div className="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold text-gray-800 text-center">Contact Me</h2>
+        <p className="text-sm text-gray-600 text-center mt-1">
+          Feel free to reach out if you have any questions or observations!
+        </p>
     
             {/* Contact Form */}
-            <form className="mt-6 flex flex-col gap-4">
+            <form className="mt-4 flex flex-col gap-3">
               <div>
-                <label className="text-gray-700 font-medium">Your Name</label>
+                <label className="text-gray-700 font-medium">Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
@@ -22,7 +22,7 @@ const Contact = () => {
               </div>
     
               <div>
-                <label className="text-gray-700 font-medium">Your Email</label>
+                <label className="text-gray-700 font-medium">Email</label>
                 <input
                   type="email"
                   placeholder="Enter your email"

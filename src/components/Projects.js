@@ -87,11 +87,20 @@ const Projects = () => {
         <section id="projects" className='projects-section'>
             <h2>My Projects</h2>
             
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-        </div></section>
+            <div className="flex flex-col gap-6 p-6">
+            {projects.map((project, index) => (
+  <ProjectCard
+    key={project.id}
+    title={project.title}
+    description={project.description}
+    imgSrc={project.imgSrc}
+    link={project.link}
+    reverse={index % 2 !== 0} // reverses layout on every other card
+  />
+))}
+
+</div>
+</section>
     );
 };
 
